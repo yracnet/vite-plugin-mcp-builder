@@ -10,4 +10,13 @@ export default defineConfig({
   clean: true,
   shims: true,
   sourcemap: false,
+  bundle: false,
+  splitting: true,
+  treeshake: false,
+  external: [
+    "glob",
+    "vite",
+    "express",
+    "path"
+  ]
 })

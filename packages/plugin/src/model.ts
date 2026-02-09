@@ -12,7 +12,7 @@ export type PluginOpts = {
     root?: string;
     cacheDir?: string;
     server?: string;
-    devHandler: string;
+    devHandler?: string;
     main?: string;
     include?: string[];
     dirs?: {

@@ -12,11 +12,19 @@ export default defineConfig({
   plugins: [
     //@ts-ignore
     mcpPlugin({
+      // root: process.cwd(),
+      // cacheDir: '.mcp',
+      server: './src/createServer.js',
+      // devHandler: './src/createDevHandler.js',
+      main: './src/main-prod.js',
+      // include: ['**/*.tool.ts', '**/*.prompt.ts', '**/*.resource.ts'],
       dirs: [
         {
           dir: './src/calculadora',
+          // include: ['**/*.tool.ts', '**/*.prompt.ts', '**/*.resource.ts'],
+          // skip: false,
         }
-      ]
+      ],
     })
   ],
 })
