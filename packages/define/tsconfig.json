@@ -22,5 +22,5 @@
     "noFallthroughCasesInSwitch": true,
     "noUncheckedSideEffectImports": true
   },
-  "include": ["src", "src-dev/define.ts"]
+  "include": ["src", "src/define.ts"]
 }

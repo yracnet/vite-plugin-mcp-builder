@@ -1,0 +1,43 @@
+{
+  "name": "@mcp/define",
+  "version": "0.0.1",
+  "description": "Define MCP (Model Context Protocol) servers",
+  "type": "module",
+  "main": "./dist/index.js",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "files": [
+    "dist",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "prepublish": "yarn build",
+    "prepack": "yarn build"
+  },
+  "keywords": [
+    "define",
+    "mcp",
+    "model-context-protocol"
+  ],
+  "author": "Willyams Yujra <yracnet@gmail.com>",
+  "license": "MIT",
+  "homepage": "https://github.com/yracnet/vite-plugin-mcp-builder",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yracnet/vite-plugin-mcp-builder"
+  },
+  "peerDependencies": {
+    "@modelcontextprotocol/sdk": "^1.26.0"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "tsup": "^8.5.1",
+    "typescript": "~5.9.3",
+    "@modelcontextprotocol/sdk": "^1.26.0"
+  }
+}

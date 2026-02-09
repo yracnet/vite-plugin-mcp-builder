@@ -4,11 +4,6 @@ import path from 'path'
 
 // https://vite.dev/config/
 export default defineConfig({
-  resolve: {
-    alias: {
-      '@mcp/define': 'vite-plugin-mcp-builder/define'
-    }
-  },
   plugins: [
     //@ts-ignore
     mcpPlugin({
