@@ -12,7 +12,6 @@ export type PluginOpts = {
     root?: string;
     cacheDir?: string;
     server?: string;
-    define?: string;
     devHandler?: string;
     main?: string;
     include?: string[];
@@ -28,7 +27,6 @@ export type PluginConf = {
     serverFile: string;
     createInstanceFile: string;
     devHandlerFile: string;
-    defineFile?: string;
     mainFile: string;
     dirs: {
         dir: string,
@@ -48,7 +46,6 @@ export const assertConfig = (opts: PluginOpts): PluginConf => {
         server = path.join(pluginDir, "createServer.js"),
         main = path.join(pluginDir, "main.js"),
         devHandler = path.join(pluginDir, "devHandler.js"),
-        define = path.join(pluginDir, "define.ts"),
         include = [
             "**/*.tool.ts",
             "**/*.promt.ts",
@@ -68,7 +65,6 @@ export const assertConfig = (opts: PluginOpts): PluginConf => {
         createInstanceFile: path.resolve(root, cacheDir, "createInstance.js"),
         devHandlerFile: path.resolve(root, devHandler),
         mainFile: path.resolve(root, main),
-        defineFile: path.resolve(root, define),
         dirs: allowDirs.map((it) => {
             return {
                 dir: path.resolve(root, it.dir),

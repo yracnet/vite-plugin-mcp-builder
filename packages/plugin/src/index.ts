@@ -21,7 +21,6 @@ export const mcpPlugin = (opts: PluginOpts): Plugin[] => {
               [`${conf.moduleId}/main.js`]: conf.mainFile,
               [`${conf.moduleId}/createServer.js`]: conf.serverFile,
               [`${conf.moduleId}/createInstance.js`]: conf.createInstanceFile,
-              [`${conf.moduleId}/define`]: conf.defineFile,
             },
           },
         };

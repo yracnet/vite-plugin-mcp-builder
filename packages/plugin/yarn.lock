@@ -455,6 +455,11 @@ magic-string@^0.30.17:
   dependencies:
     "@jridgewell/sourcemap-codec" "^1.5.5"
 
+mcp-define@^0.0.1:
+  version "0.0.1"
+  resolved "https://registry.yarnpkg.com/mcp-define/-/mcp-define-0.0.1.tgz#c90495704515a5f9b283caabcd27ebaac28a4f91"
+  integrity sha512-HQM3YA0j+zsetBsR9CoUKlCd5IZP5ydtGq31awFV3PejrbLL3BN7aiAcGwkuAYa/1Vn+Ce6TCYLZEx0cQvGflA==
+
 minimatch@^10.1.2:
   version "10.1.2"
   resolved "https://registry.yarnpkg.com/minimatch/-/minimatch-10.1.2.tgz#6c3f289f9de66d628fa3feb1842804396a43d81c"

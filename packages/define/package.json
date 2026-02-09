@@ -1,5 +1,5 @@
 {
-  "name": "@mcp/define",
+  "name": "mcp-define",
   "version": "0.0.1",
   "description": "Define MCP (Model Context Protocol) servers",
   "type": "module",
