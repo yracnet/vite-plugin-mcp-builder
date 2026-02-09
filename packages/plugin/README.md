@@ -17,16 +17,16 @@ The plugin scans the project files defined by the `dirs` option and exposes a de
 Install with your package manager:
 
 ```bash
-yarn add -D vite-plugin-mcp-build
+yarn add -D vite-plugin-mcp-builder
 # or
-npm install -D vite-plugin-mcp-build
+npm install -D vite-plugin-mcp-builder
 ```
 
 ## Usage (example `vite.config.ts`)
 
 ```ts
 import { defineConfig } from 'vite'
-import mcpPlugin from 'vite-plugin-mcp-build'
+import mcpPlugin from 'vite-plugin-mcp-builder'
 
 export default defineConfig({
   plugins: [

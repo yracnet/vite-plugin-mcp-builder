@@ -1,5 +1,5 @@
 {
-  "name": "vite-plugin-mcp-build",
+  "name": "vite-plugin-mcp-builder",
   "version": "0.0.1",
   "description": "Vite plugin to build and serve MCP (Model Context Protocol) servers",
   "type": "module",
@@ -16,12 +16,13 @@
   },
   "files": [
     "dist",
-    "src-dev"
+    "src-dev",
+    "LICENSE"
   ],
   "scripts": {
     "build": "tsup",
-    "dev": "tsup --watch",
-    "type-check": "tsc --noEmit"
+    "prepublish": "yarn build",
+    "prepack": "yarn build"
   },
   "keywords": [
     "vite",
@@ -30,15 +31,16 @@
     "model-context-protocol",
     "build-tool"
   ],
-  "author": "Your Team",
+  "author": "Willyams Yujra <yracnet@gmail.com>",
   "license": "MIT",
+  "homepage": "https://github.com/yracnet/vite-plugin-mcp-builder",
   "repository": {
     "type": "git",
-    "url": "https://github.com/yracnet/vite-plugin-mcp-build"
+    "url": "https://github.com/yracnet/vite-plugin-mcp-builder"
   },
   "peerDependencies": {
     "@modelcontextprotocol/sdk": "^1.26.0",
-    "vite": "^5.0.0 || ^7.0.0",
+    "vite": "^3 || ^4 || ^5 || ^6 || ^7",
     "glob": "^13.0.0"
   },
   "dependencies": {},
