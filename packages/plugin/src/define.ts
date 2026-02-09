@@ -22,6 +22,7 @@ export function defineRegisterTool<OutputArgs extends ZodRawShapeCompat | AnySch
 }, cb: ToolCallback<InputArgs>) {
     return (server: McpServer) => {
         try {
+            console.log("RegisterTool:", name);
             server.registerTool(name, config, cb)
         } catch (error) {
             console.error('RegisterTool:', error);
@@ -36,6 +37,7 @@ export function defineRegisterPrompt<Args extends PromptArgsRawShape>(name: stri
 }, cb: PromptCallback<Args>) {
     return (server: McpServer) => {
         try {
+            console.log("RegisterPrompt:", name);
             server.registerPrompt(name, config, cb);
         } catch (error) {
             console.error('RegisterPrompt:', error);
@@ -46,6 +48,7 @@ export function defineRegisterPrompt<Args extends PromptArgsRawShape>(name: stri
 export function defineRegisterResource(name: string, uriOrTemplate: string, config: ResourceMetadata, readCallback: ReadResourceCallback) {
     return (server: McpServer) => {
         try {
+            console.log("RegisterResource:", name);
             server.registerResource(name, uriOrTemplate, config, readCallback);
         } catch (error) {
             console.error('RegisterResource:', error);
@@ -56,6 +59,7 @@ export function defineRegisterResource(name: string, uriOrTemplate: string, conf
 export function defineRegisterResourceV2(name: string, uriOrTemplate: ResourceTemplate, config: ResourceMetadata, readCallback: ReadResourceTemplateCallback) {
     return (server: McpServer) => {
         try {
+            console.log("RegisterResource:", name);
             server.registerResource(name, uriOrTemplate, config, readCallback);
         } catch (error) {
             console.error('RegisterResourceV2:', error);
