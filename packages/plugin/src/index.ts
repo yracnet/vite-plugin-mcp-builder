@@ -21,6 +21,7 @@ export const mcpPlugin = (opts: PluginOpts): Plugin[] => {
               [`${conf.moduleId}/main.js`]: conf.mainFile,
               [`${conf.moduleId}/createServer.js`]: conf.serverFile,
               [`${conf.moduleId}/createInstance.js`]: conf.createInstanceFile,
+              [`${conf.moduleId}/define`]: 'vite-plugin-mcp-builder/define',
             },
           },
         };
@@ -55,7 +56,7 @@ export const mcpPlugin = (opts: PluginOpts): Plugin[] => {
           }
         };
         watcher.on("all", (_, file) => onReload(file));
-        console.log("Load devHandlerFile!");
+        console.log("Load devHandler!");
         const { createHandler } = await ssrLoadModule(conf.devHandlerFile, {
           fixStacktrace: true,
         });
@@ -75,6 +76,7 @@ export const mcpPlugin = (opts: PluginOpts): Plugin[] => {
     {
       name: "vite-plugin-mcp-build",
       enforce: "pre",
+      apply: "build",
       config: () => {
         return {
           appType: "custom",

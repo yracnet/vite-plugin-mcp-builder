@@ -6,24 +6,15 @@ import path from 'path'
 export default defineConfig({
   resolve: {
     alias: {
-      '@mcp/define': path.resolve('../plugin/src/define.ts')
+      '@mcp/define': 'vite-plugin-mcp-builder/define'
     }
   },
   plugins: [
     //@ts-ignore
     mcpPlugin({
-      // root: process.cwd(),
-      // cacheDir: '.mcp',
-      server: './src/createServer.js',
-      // devHandler: './src/createDevHandler.js',
-      main: './src/main-prod.js',
-      // include: ['**/*.tool.ts', '**/*.prompt.ts', '**/*.resource.ts'],
+      server: './src/server.js',
       dirs: [
-        {
-          dir: './src/calculadora',
-          // include: ['**/*.tool.ts', '**/*.prompt.ts', '**/*.resource.ts'],
-          // skip: false,
-        }
+        { dir: './src/calculadora' }
       ],
     })
   ],

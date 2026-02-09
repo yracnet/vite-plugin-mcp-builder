@@ -397,6 +397,11 @@ undici-types@~7.16.0:
   resolved "https://registry.yarnpkg.com/undici-types/-/undici-types-7.16.0.tgz#ffccdff36aea4884cbfce9a750a0580224f58a46"
   integrity sha512-Zz+aZWSj8LE6zoxD+xrjh4VfkIG8Ya6LvYkZqtUQGJPZjYl53ypCaUwWqo7eI0x66KBGeRo+mlBEkMSeSZ38Nw==
 
+vite-plugin-mcp-builder@^0.0.1:
+  version "0.0.1"
+  resolved "https://registry.yarnpkg.com/vite-plugin-mcp-builder/-/vite-plugin-mcp-builder-0.0.1.tgz#8674aeea9e6d64d1bcf8bc733250945750c2a038"
+  integrity sha512-1zZxzmqGSxUDaOQVnzmig0dqAYe34uthB+6uVcf0Pvjjho7kOi+9H/xshfsw5DY9o/hKI/WdiD2JKzrMUO3H2g==
+
 vite@^7.3.1:
   version "7.3.1"
   resolved "https://registry.yarnpkg.com/vite/-/vite-7.3.1.tgz#7f6cfe8fb9074138605e822a75d9d30b814d6507"

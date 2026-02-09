@@ -1,5 +1,5 @@
 import { z } from "zod";
-import { defineRegisterTool } from "@mcp/define";
+import { defineRegisterTool } from "vite-plugin-mcp-builder/define";
 
 
 export default defineRegisterTool("multiplicar",

@@ -1,4 +1,4 @@
-import { defineRegisterResource } from "@mcp/define";
+import { defineRegisterResource } from "vite-plugin-mcp-builder/define";
 import { ResourceTemplate } from "@modelcontextprotocol/sdk/server/mcp.js";
 
 export default defineRegisterResource(
