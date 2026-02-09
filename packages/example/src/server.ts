@@ -1,11 +1,10 @@
 import { McpServer } from "@modelcontextprotocol/sdk/server/mcp.js";
 
-const servidor = new McpServer({
-  name: "vite-plugin-mcp-build",
-  version: "1.0.0",
-});
-
-
-
-export default servidor;
+export default () => {
+  const servidor = new McpServer({
+    name: "mcp-custom-example",
+    version: "1.0.0",
+  });
+  return servidor;
+}
 
