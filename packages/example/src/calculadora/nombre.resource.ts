@@ -1,11 +1,10 @@
-import { defineRegisterResource } from "@mcp/define";
+import { defineRegisterResourceV2 } from "mcp-define";
 import { ResourceTemplate } from "@modelcontextprotocol/sdk/server/mcp.js";
 
-export default defineRegisterResource(
+export default defineRegisterResourceV2(
     "saludar",
     new ResourceTemplate("saludar://{nombre}", { list: undefined }),
     {
-
     },
     async (url, { nombre }) => {
         if (typeof nombre !== 'string') {

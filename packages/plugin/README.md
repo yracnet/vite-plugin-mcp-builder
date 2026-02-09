@@ -113,11 +113,19 @@ await server.connect(transport);
 
 ## Defining tools, prompts and resources
 
-Tools, prompts and resources are defined with the helper registrations (see `src/define.ts`). Typical usage registers a tool with a title, description, input schema and an implementation function. Example (TypeScript):
+Install `mcp-define` for help definition:
+
+```bash
+yarn add -D mcp-define
+# or
+npm install -D mcp-define
+```
+
+Tools, prompts and resources are defined with the helper registrations (see `mcp-define` library). Typical usage registers a tool with a title, description, input schema and an implementation function. Example (TypeScript):
 
 ```ts
 import { z } from 'zod';
-import { defineRegisterTool } from '@mcp/define';
+import { defineRegisterTool } from 'mcp-define';
 
 export default defineRegisterTool(
   'divide',

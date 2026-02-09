@@ -14,5 +14,8 @@
     "typescript": "^5.9.3",
     "vite": "^7.3.1",
     "vite-plugin-mcp-builder": "^0.0.1"
+  },
+  "dependencies": {
+    "mcp-define": "^0.0.1"
   }
 }

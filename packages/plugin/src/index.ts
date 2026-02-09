@@ -62,7 +62,7 @@ export const mcpPlugin = (opts: PluginOpts): Plugin[] => {
         const handler = await createHandler({});
         appServer.use("/", async (req, res, next) => {
           try {
-            handler(req, res, next);
+            await handler(req, res, next);
           } catch (error) {
             ssrFixStacktrace(error as Error);
             process.exitCode = 1;
