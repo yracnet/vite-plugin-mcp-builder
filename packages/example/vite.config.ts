@@ -1,11 +1,9 @@
 import { defineConfig } from 'vite'
-import mcpPlugin from '../plugin/src/index'
-import path from 'path'
+import { mcpPlugin } from 'vite-plugin-mcp-builder'
 
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [
-    //@ts-ignore
     mcpPlugin({
       server: './src/server.js',
       dirs: [
